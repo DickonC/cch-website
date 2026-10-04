@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: cch-solutions-web
+    restart: unless-stopped
+    # Only reachable from the server itself; the host's reverse proxy
+    # (nginx/Caddy/Traefik) forwards solutions.cch-uk.tech here and handles HTTPS.
+    ports:
+      - "127.0.0.1:8080:80"

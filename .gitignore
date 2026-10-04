@@ -1,0 +1,5 @@
+.DS_Store
+# Original logo source files (large .ai/.eps). The site uses assets/logo.svg.
+CCHLogoFiles/
+# Original uncropped photo (contains another person)
+GradPhoto.png
